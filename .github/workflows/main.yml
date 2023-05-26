@@ -5,12 +5,12 @@ on:
       - main 
 jobs:
   testing:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: "Print hello prod"
         run: echo "Hello, its prod!"
   prod_deployment:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: "Print hello prod"
         run: echo "Hello, its prod!"
