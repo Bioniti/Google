@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Print hello prod"
-        run: echo "Hello, its prod!"
+        run: echo "Hello, its testing"
+      - name: "Get clone"
+        uses: actions/checkout@v1
       - name: "print files in directory"
         run: ls -la
   prod_deployment:
