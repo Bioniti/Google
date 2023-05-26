@@ -1,0 +1,16 @@
+name: "My Githab Actions"
+on: 
+  push:
+    branches:
+      - main 
+jobs:
+  testing:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: "Print hello prod"
+        run: echo "Hello, its prod!"
+  prod_deployment:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: "Print hello prod"
+        run: echo "Hello, its prod!"
