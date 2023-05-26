@@ -9,7 +9,10 @@ jobs:
     steps:
       - name: "Print hello prod"
         run: echo "Hello, its prod!"
+      - name: "print files in directory"
+        run: ls -la
   prod_deployment:
+    needs: testing
     runs-on: ubuntu-latest
     steps:
       - name: "Print hello prod"
